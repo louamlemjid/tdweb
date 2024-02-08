@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Docs</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="ubuntu.svg" alt="api logo" width="30px" style="margin: auto;">
+        <nav class="navbar">
+            <a href="">Page d'accueil</a>
+            <a href="">Documentation</a>
+            <a href="">Actualité</a>
+            <a href="">Iscription</a>
+        </nav>
+    </div>
+    <section class="documentation">
+        <aside>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </aside>
+        <main>
+            <h1>Documentation</h1>
+            <p>Certainly! Here's the documentation with `<br>` tags added after every line:
+
+                **API de Transport en Tunisie Documentation**
+                
+                Bienvenue dans la documentation de l'API de Transport en Tunisie.<br>
+                Cette API fournit des données et des fonctionnalités pour aider les développeurs à intégrer des informations de transport public dans leurs applications.<br>
+                Que vous construisiez une application mobile, un site web ou tout autre service nécessitant des données de transport en Tunisie, cette API vous fournira les outils nécessaires pour accéder à ces informations de manière fiable et efficace.<br>
+                
+                ---
+                
+                ### Endpoints Disponibles
+                
+                1. **/stations**<br>
+                    - Méthode : GET<br>
+                    - Description : Récupère la liste des stations de transport disponibles en Tunisie.<br>
+                    - Paramètres :<br>
+                        - `latitude` (facultatif) : Latitude de la zone pour laquelle vous souhaitez récupérer les stations.<br>
+                        - `longitude` (facultatif) : Longitude de la zone pour laquelle vous souhaitez récupérer les stations.<br>
+                
+                2. **/lignes**<br>
+                    - Méthode : GET<br>
+                    - Description : Récupère la liste des lignes de transport disponibles en Tunisie.<br>
+                    - Paramètres :<br>
+                        - Aucun paramètre requis.<br>
+                
+                3. **/horaires**<br>
+                    - Méthode : GET<br>
+                    - Description : Récupère les horaires des prochains passages pour une station spécifique.<br>
+                    - Paramètres :<br>
+                        - `station_id` (obligatoire) : ID de la station pour laquelle vous souhaitez récupérer les horaires.<br>
+                        - `date` (facultatif) : Date pour laquelle vous souhaitez récupérer les horaires. Format : AAAA-MM-JJ.<br>
+                
+                4. **/tarifs**<br>
+                    - Méthode : GET<br>
+                    - Description : Récupère les tarifs des différents modes de transport en Tunisie.<br>
+                    - Paramètres :<br>
+                        - Aucun paramètre requis.<br>
+                
+                ---
+                
+                ### Exemple d'Utilisation
+                
+                **Récupérer les stations les plus proches :**<br>
+                
+                ```
+                GET /stations?latitude=36.8065&longitude=10.1815
+                ```
+                
+                **Récupérer les horaires pour une station spécifique :**<br>
+                
+                ```
+                GET /horaires?station_id=123&date=2024-02-08
+                ```
+                
+                ---
+                
+                ### Réponses de l'API
+                
+                L'API répondra avec des données au format JSON qui incluent les informations demandées.<br>
+                Les erreurs seront renvoyées avec un code d'erreur approprié ainsi qu'un message descriptif pour aider à diagnostiquer les problèmes.<br>
+                
+                ---
+                
+                ### Authentification
+                
+                Actuellement, cette API ne nécessite pas d'authentification.<br>
+                Cependant, il est fortement recommandé de limiter l'accès à l'API en utilisant des méthodes d'authentification appropriées pour assurer la sécurité des données et éviter toute utilisation abusive.<br>
+                
+                ---
+                
+                Merci d'utiliser l'API de Transport en Tunisie.<br>
+                Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter à l'adresse support@transport-tunisie-api.com.</p>
+        </main>
+        <aside>
+            <ol>
+                <li>facebook</li>
+                <li>npm</li>
+                <li>github</li>
+                <li>Api</li>
+            </ol>
+        </aside>
+    </section>
+</body>
+</html>
